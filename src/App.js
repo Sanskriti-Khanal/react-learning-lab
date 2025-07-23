@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
+
+import ProfileCard from './components/ProfileCard';
+// import todolist from './components/todolist';
+import './index.css';
+
 
 function App() {
+    
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfileCard
+        name="Shrddha Sapkota"
+        image=""
+        bio="I'm a passionate web developer with a love for learning new tech. I enjoy building creative and responsive web apps."
+        skills={["React.js", "Node.js", "MongoDB", "UI Design"]}
+      />
     </div>
   );
-}
+};
 
 export default App;
